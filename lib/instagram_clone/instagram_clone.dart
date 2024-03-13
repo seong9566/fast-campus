@@ -22,7 +22,7 @@ class _InstagramCloneState extends State<InstagramClone> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _appBar(),
+      appBar: index == 0 ? _appBar() : null,
       body: InstagramBody(index: index),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
